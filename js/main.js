@@ -34,7 +34,7 @@ document.getElementById("applyButton").addEventListener("click", function () {
   if (couponInput.value == "SELL200") {
     const discountAmount = totalPrice * (20 / 100);
     discount.innerText = discountAmount.toFixed(2);
-    finalTotal.innerText = totalPrice - discountAmount;
+    finalTotal.innerText = (totalPrice - discountAmount).toFixed(2);
     couponInput.value = "";
   } else {
     finalTotal.innerText = totalPrice.toFixed(2);
@@ -47,6 +47,7 @@ document.getElementById("goHomeButton").addEventListener("click", function () {
   finalTotal.innerText = 0;
   discount.innerText = 0;
   document.getElementById("totalPrice").innerText = 0;
+  document.getElementById("itemContainer").innerHTML = "";
   discountAmount = 0;
   totalPrice = 0;
 });
