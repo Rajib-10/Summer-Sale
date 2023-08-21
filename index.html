@@ -49,17 +49,23 @@
     </style>
   </head>
   <body class="font-workSans">
-    <header class="lg:h-screen bg-[#F9F6E2] ">
-      <div class="px-5 pt-5 md:px-10 md:py-16 lg:px-[120px] lg:pt-12 flex flex-col md:flex-row justify-between items-center" >
+    <header class="lg:h-screen bg-[#F9F6E2]">
+      <div
+        class="px-5 pt-5 md:px-10 md:py-16 lg:px-[120px] lg:pt-12 flex flex-col md:flex-row justify-between items-center"
+      >
         <div class="flex justify-center items-center">
           <div class="text-center text-[#111]">
-            <h2 class="text-xl md:text-3xl font-medium mb-10">---SALE FEVER---</h2>
-            <h1 class="leading-normal text-2xl  lg:text-[45px] font-bold mb-10">
+            <h2 class="text-xl md:text-3xl font-medium mb-10">
+              ---SALE FEVER---
+            </h2>
+            <h1 class="leading-normal text-2xl lg:text-[45px] font-bold mb-10">
               Purchase TK 200 or <br />
-              above & get <span class=" text-[#E527B2]">20% off</span>
+              above & get <span class="text-[#E527B2]">20% off</span>
             </h1>
             <span class="text-xl lg:text-2xl font-medium">Use Promo Code</span>
-            <button class="text-xl text-white lg:text-2xl lg:font-semibold btn-secondary btn">
+            <button
+              class="text-xl text-white lg:text-2xl lg:font-semibold btn-secondary btn"
+            >
               SELL200
             </button>
           </div>
@@ -70,15 +76,19 @@
       </div>
     </header>
 
-
-
-    <main class="lg:pt-24 text-[#111] lg:px-[120px] bg-[#F8F8F8] lg:mb-20 ">
+    <main class="lg:pt-24 text-[#111] lg:px-[120px] bg-[#F8F8F8] mb-20 ">
       <section>
-        <div class="flex flex-col w-full  lg:flex-row ">
+        <div class="flex flex-col w-full lg:flex-row">
           <div class="grid lg:w-[68%]">
-            <h1 class="text-2xl text-center mt-12 lg:mt-0 lg:text-left md:text-4xl font-semibold mb-12">Kitchenware</h1>
+            <h1
+              class="text-2xl text-center mt-12 lg:mt-0 lg:text-left md:text-4xl font-semibold mb-12"
+            >
+              Kitchenware
+            </h1>
 
-            <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 ">
+            <div
+              class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5"
+            >
               <div
                 class="card bg-base-100 shadow-xl h-[340px]"
                 onclick="handleClick(this)"
@@ -216,13 +226,19 @@
                 </div>
               </div>
             </div>
-            <h1 class="text-2xl text-center lg:text-left md:text-4xl font-semibold mb-12 mt-12">Sportswear</h1>
-            <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            <h1
+              class="text-2xl text-center lg:text-left md:text-4xl font-semibold mb-12 mt-12"
+            >
+              Sportswear
+            </h1>
+            <div
+              class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5"
+            >
               <div
                 class="card bg-base-100 shadow-xl h-[340px]"
                 onclick="handleClick(this)"
               >
-                <figure class="px-10 py-10 pb-16 bg-img-bg m-3 ">
+                <figure class="px-10 py-10 pb-16 bg-img-bg m-3">
                   <img
                     src="./images/prod4.png"
                     alt="Shoes"
@@ -356,13 +372,15 @@
               </div>
             </div>
           </div>
-          <div class="grid mt-[88px] ml-5 ">
+          <div class="grid mt-[88px] ml-5">
             <div>
-              <div class="bg-base-100 shadow-xl p-5 rounded-lg text-center lg:text-left ">
+              <div
+                class="bg-base-100 shadow-xl p-5 rounded-lg text-center lg:text-left mr-5 lg:mr-0"
+              >
                 <h2 class="text-[#111] text-2xl font-medium">Have coupon?</h2>
                 <input
                   id="couponInput"
-                  class="px-1 font-semibold py-[11px] rounded-l-lg w-[120px] border z-10"
+                  class="px-3 w-[60%] md:w-[70%] font-semibold py-[11px] rounded-l-lg  border z-10"
                   type="text"
                   placeholder="Coupon code"
                 />
@@ -375,47 +393,58 @@
                 </button>
               </div>
 
-              <div class="bg-base-100 shadow-xl mt-5 p-5  rounded-lg text-center lg:text-left ">
-                <ol id="itemContainer" class="text-left !important font-medium md:pl-10 md:text-2xl md:font-semibold lg:pl-0 lg:font-medium lg:text-xl"></ol>
+              <div
+                class="bg-base-100 shadow-xl mt-5 p-5 rounded-lg text-center lg:text-left mr-5 lg:mr-0"
+              >
+                <ol
+                  id="itemContainer"
+                  class="text-left !important font-medium md:pl-10 md:text-2xl md:font-semibold lg:pl-0 lg:font-medium lg:text-xl"
+                ></ol>
                 <hr />
                 <h2 class="mt-4 text-2xl font-medium">
-                  Total price:<span id="totalPrice">0</span> TK
+                  Total price:<span id="totalPrice" class="text-gray-500"
+                    >0</span
+                  >
+                  <span class="text-gray-500">Tk</span>
                 </h2>
                 <h2 class="text-2xl font-medium">
-                  Discount:<span id="discount">0</span> Tk
+                  Discount:<span id="discount" class="text-gray-500">0</span>
+                  <span class="text-gray-500">Tk</span>
                 </h2>
                 <h2 class="mb-4 text-2xl font-medium">
-                  Total:<span id="finalTotal">0</span> Tk
+                  Total:<span id="finalTotal" class="text-gray-500">0</span>
+                  <span class="text-gray-500">Tk</span>
                 </h2>
                 <hr />
                 <br />
-                <button
-                  id="make-purchase"
-                  disabled
-                  onclick="my_modal_5.showModal()"
-                  class="btn btn-secondary w-full md:w-[50%] lg:w-full text-[20px] font-semibold"
-                >
-                  Make Purchase
-                </button>
-                <dialog
-                  id="my_modal_5"
-                  class="modal modal-bottom sm:modal-middle text-center "
-                >
-                  <form method="dialog" class="modal-box">
-                    <img class="mx-auto" src="./images/congo.png" alt="" />
-                    <h3 class="font-bold text-lg">Congratulations</h3>
-                    <p class="py-4">Your Purchase the product</p>
-                    <div class="modal-action place-content-center pb-5">
-                      <button
-                        id="goHomeButton"
-                        class="btn btn-secondary text-[20px] font-semibold"
-                      >
-                        Go Home
-                      </button>
-                    </div>
-                  </form>
-                </dialog>
+               
               </div>
+              <button
+              id="make-purchase"
+              disabled
+              onclick="my_modal_5.showModal()"
+              class="btn btn-secondary w-[75%]  ml-5 md:w-[72%] md:ml-[85px] lg:max-w-[312px] text-[20px] font-semibold lg:ml-4 absolute -mt-7 "
+            >
+              Make Purchase
+            </button>
+            <dialog
+              id="my_modal_5"
+              class="modal modal-bottom sm:modal-middle text-center"
+            >
+              <form method="dialog" class="modal-box">
+                <img class="mx-auto" src="./images/congo.png" alt="" />
+                <h3 class="font-bold text-lg">Congratulations</h3>
+                <p class="py-4">Your Purchase the product</p>
+                <div class="modal-action place-content-center pb-5">
+                  <button
+                    id="goHomeButton"
+                    class="btn btn-secondary text-[20px] font-semibold"
+                  >
+                    Go Home
+                  </button>
+                </div>
+              </form>
+            </dialog>
             </div>
           </div>
         </div>
